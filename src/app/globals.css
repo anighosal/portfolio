@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .active-link {
+    background-color: blue; /* Set your desired background color */
+    /* color: white; Set your desired text color */
+
+
+    
