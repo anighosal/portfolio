@@ -20,7 +20,7 @@ const Contact = () => {
     <Element name="contact">
       <div className="justify-center mt-20">
         <h2
-          className="font-semibold md:text-2xl text-lg text-center mb-20 text-white"
+          className="font-semibold md:text-4xl text-lg text-center mb-20 text-white"
           data-aos="fade-up"
           data-aos-duration="800"
         >
@@ -29,7 +29,7 @@ const Contact = () => {
         <div className="md:flex md:flex-row flex-cols-1  md:space-y-0 space-y-5 gap-5">
           <div>
             <h3
-              className="md:text-start text-center text-white md:text-xl text-lg font-bold mb-4"
+              className="md:text-start text-center text-white md:text-3xl text-lg font-bold mb-4"
               data-aos="fade-right"
             >
               Lets Contact
@@ -39,34 +39,34 @@ const Contact = () => {
               Whether you have a question or just want to say hi, I will try my
               best to get back to you!
             </p>
-            <div className="flex gap-10 mt-4" data-aos="fade-right">
+            <div className="flex gap-5 mt-4" data-aos="fade-right">
               <a
                 href="https://www.facebook.com/anighosal2019"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaFacebook className="text-[#1877f2] bg-white rounded-full text-2xl"></FaFacebook>
+                <FaFacebook className="text-[#1877f2] bg-white rounded-full text-5xl"></FaFacebook>
               </a>
               <a
                 href="https://www.linkedin.com/in/ani-ghosal-4a083a220/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaLinkedin className="text-[#0a66c2] text-2xl"></FaLinkedin>
+                <FaLinkedin className="text-[#0a66c2] text-5xl"></FaLinkedin>
               </a>
               <a
                 href="https://github.com/anighosal"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaGithub className="text-[#333] bg-white rounded-full text-2xl"></FaGithub>
+                <FaGithub className="text-[#333] bg-white rounded-full text-5xl"></FaGithub>
               </a>
               <a
                 href="https://twitter.com/ani_ghosal"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaTwitter className="text-[#1da1f2] text-2xl"></FaTwitter>
+                <FaTwitter className="text-[#1da1f2] text-5xl"></FaTwitter>
               </a>
             </div>
           </div>

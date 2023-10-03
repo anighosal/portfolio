@@ -57,10 +57,10 @@ const Navbar = () => {
       data-aos="fade-down"
       data-aos-duration="800"
     >
-      <div className="flex  items-center justify-between mx-auto px-2 md:py-4 md:px-4">
+      <div className="flex md:w-[90%] items-center justify-between mx-auto px-2 md:py-4 md:px-4">
         <Link
           href={"/"}
-          className="text-lg md:text-3xl text-white font-semibold"
+          className="text-lg md:text-3xl font-bold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 hover:from-pink-600 hover:to-purple-400 "
         >
           Ani Ghosal
         </Link>
@@ -68,14 +68,14 @@ const Navbar = () => {
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
-              className="flex items-center px-3 py-2 border  rounded border-slate-200 hover:text-white hover:border-white text-white"
+              className="flex items-center px-3 py-2 border  rounded border-slate-200 text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 hover:from-pink-600 hover:to-purple-400 hover:text-white hover:border-white text-white"
             >
               <FaBars className="h-5 w-5" />
             </button>
           ) : (
             <button
               onClick={() => setNavbarOpen(false)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 hover:text-white hover:border-white text-white"
+              className="flex items-center px-3 py-2 border rounded border-slate-200 hover:text-white hover:border-white text-white "
             >
               <FaMinus className="h-5 w-5" />
             </button>
@@ -95,8 +95,8 @@ const Navbar = () => {
                   duration={500}
                   offset={-50}
                   onClick={() => handleScrollTo(link.path)}
-                  activeClass="text-gradient-to-br from-blue-500 via-purple-500 to text-pink-500" // Add this line
-                  className="cursor-pointer"
+                  activeClass="font-bold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 hover:from-pink-600 hover:to-purple-400" // Add this line
+                  className="cursor-pointer hover:from-pink-600 hover:to-purple-400"
                 >
                   {link.title}
                 </ScrollLink>
@@ -107,7 +107,7 @@ const Navbar = () => {
         <div>
           <button
             onClick={() => handleScrollTo("contact")} // Scroll to the "Contact" section
-            className="mt-3 px-1 py-1 w-full sm:w-fit bg-gradient-to-br from-blue-500 via-purple-500 to bg-pink-500 rounded-full bg-transparent hover:bg-slate-800 text-white border border-white"
+            className="mt-3 px-1 py-1 w-full sm:w-fit bg-gradient-to-br from-purple-400 to-pink-600 rounded-full bg-transparent hover:bg-slate-800 text-white border border-white"
           >
             <span className="block rounded-full md:px-5 md:py-1 px-3 py-1 hover:bg-[#121212]">
               {" "}

@@ -68,9 +68,9 @@ const Projects = () => {
   return (
     <Element name="projects">
       <div className="mb-10 mt-20" data-aos="fade-up" data-aos-duration="800">
-        <h2 className="font-semibold text-center md:text-2xl text-lg text-white mb-20">
+        <h2 className="font-semibold text-center md:text-4xl text-lg text-white mb-20">
           {" "}
-          projects
+          Projects
         </h2>
         <div className="space-x-5 mt-8">
           <div

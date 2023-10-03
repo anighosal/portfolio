@@ -63,17 +63,17 @@ const About = () => {
       {" "}
       {/* Add this Element wrapper */}
       <section className="text-white">
-        <div className="md:grid md:grid-cols-2 gap-8 justify-center items-center md:py-8 md:px-10 px-3 py-16">
+        <div className="md:grid md:grid-cols-2 gap-5 justify-center items-center md:py-8 md:px-2 px-3 py-16">
           <div
-            className="md:ml-10 ml-0 w-full"
+            className="ml-0 w-full"
             data-aos="fade-right"
             data-aos-duration="800"
           >
             <Image
-              className="md:w-[400px] md:h-[400px] w-full h-full"
+              className="md:w-[500px] md:h-[500px] w-full h-full"
               src={img}
-              width={400}
-              height={400}
+              width={500}
+              height={500}
               alt="about me"
             />
           </div>
@@ -82,7 +82,7 @@ const About = () => {
             data-aos="fade-left"
             data-aos-duration="800"
           >
-            <h2 className="md:text-start text-center md:text-xl text-lg font-bold mb-4">
+            <h2 className="md:text-start text-center md:text-4xl text-lg font-bold mb-4">
               About Me
             </h2>
             <p className="text-xs md:text-base">

@@ -77,7 +77,7 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className="btn bg-gradient-to-br from-blue-500 via-purple-500 to bg-pink-500 text-white"
+          className="btn bg-gradient-to-br from-purple-400 to-pink-600 text-white text-xs hover:from-pink-600 hover:to-purple-400 "
         >
           Submit <FaRegPaperPlane></FaRegPaperPlane>
         </button>

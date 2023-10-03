@@ -78,9 +78,9 @@ const Hero = () => {
         <div>
           <button
             onClick={handleDownloadResume}
-            className="mt-3 px-1 py-1 w-full sm:w-fit bg-gradient-to-br from-blue-500 via-purple-500 to bg-pink-500 rounded-full bg-transparent hover:bg-slate-800 text-white border border-white"
+            className="mt-3 px-1 py-1 w-full sm:w-fit bg-gradient-to-br from-purple-400 to-pink-600 rounded-full bg-transparent hover:bg-slate-800 text-white border border-white"
           >
-            <span className="block rounded-full md:px-5 md:py-3 px-3 py-1 bg-[#121212] hover:bg-gradient-to-br from-blue-500 via-purple-500 to">
+            <span className="block rounded-full md:px-5 md:py-3 px-3 py-1 bg-[#121212] hover:bg-gradient-to-r from-purple-400 to-pink-600">
               Download CV
             </span>
           </button>

@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect } from "react";
-
 import { Element } from "react-scroll";
 import {
   FaBootstrap,
@@ -43,7 +42,7 @@ const Skills = () => {
       >
         <div>
           <h2
-            className="font-bold text-center md:text-2xl text-lg text-white mb-20"
+            className="font-bold text-center md:text-3xl text-lg text-white mb-20"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
@@ -52,86 +51,119 @@ const Skills = () => {
         </div>
         <div className="">
           <div
-            className="flex flex-wrap flex-col-4 text-white  justify-center items-center gap-4"
+            className="grid grid-cols-4 md:grid-cols-8 gap-4 text-white justify-center items-center"
             data-aos="fade-up"
             data-aos-duration="800"
           >
-            <div>
-              <FaHtml5 className="md:w-24 md:h-24 w-10 h-10 text-blue-500"></FaHtml5>
-              <p className="text-center">Html5</p>
-            </div>
-            <div>
-              <FaCss3 className="md:w-24 md:h-24 w-10 h-10 text-blue-500" />
-              <p className="text-center">Css3</p>
-            </div>
-            <div>
-              <FaJs className="md:w-24 md:h-24 w-10 h-10 text-yellow-400" />
-              <p className="text-center">Javascript</p>
-            </div>
-            <div>
-              <FaReact className="md:w-24 md:h-24 w-10 h-10 text-blue-400" />
-              <p className="text-center">ReactJs</p>
-            </div>
-            <div>
-              <FaNodeJs className="md:w-24 md:h-24 w-10 h-10 text-green-400" />
-              <p className="text-center">NodeJs</p>
-            </div>
-            <div>
-              <FaBootstrap className="md:w-24 md:h-24 w-10 h-10 text-purple-600" />
-              <p className="text-center">Bootstrap</p>
-            </div>
-            <div>
-              <FaFigma className="md:w-24 md:h-24 w-10 h-10 text-purple-600" />
-              <p className="text-center">Figma</p>
-            </div>
-            <div>
-              <SiNextdotjs className="md:w-24 md:h-24 w-10 h-10 text-gray-400" />
-              <p className="text-center">NextJs</p>
-            </div>
-          </div>
-
-          <div
-            className="flex flex-wrap text-white flex-col-4 justify-center items-center gap-4 mt-6"
-            data-aos="fade-up"
-            data-aos-duration="800"
-          >
-            <div>
-              <SiMongodb className="md:w-24 md:h-24 w-10 h-10 text-gray-500"></SiMongodb>
-              <p className="text-center">Mongoose</p>
-            </div>
-            <div>
-              <SiMongodb className="md:w-24 md:h-24 w-10 h-10 text-green-500"></SiMongodb>
-              <p className="text-center">MongoDb</p>
-            </div>
-            <div>
-              <SiTailwindcss className="md:w-24 md:h-24 w-10 h-10 text-blue-400" />
-              <p className="text-center">Tailwind Css</p>
-            </div>
-            <div>
-              <SiExpress className="md:w-24 md:h-24 w-10 h-10 text-green-500" />
-              <p className="text-center">ExpressJs</p>
-            </div>
-            <div>
-              <SiDaisyui className="md:w-24 md:h-24 w-10 h-10 text-indigo-500" />
-              <p className="text-center">Daisy Ui</p>
-            </div>
-            <div>
-              <SiGit className="md:w-24 md:h-24 w-10 h-10 text-red-500" />
-              <p className="text-center">Git</p>
-            </div>
-            <div>
-              <SiFirebase className="md:w-24 md:h-24 w-10 h-10 text-yellow-400" />
-              <p className="text-center">Firebase</p>
-            </div>
-            <div>
-              <SiVercel className="md:w-24 md:h-24 w-10 h-10 text-blue-400" />
-              <p className="text-center">Vercel</p>
-            </div>
+            <SkillIcon
+              icon={
+                <FaHtml5 className="md:w-16 md:h-16 w-10 h-10 text-blue-500" />
+              }
+              text="Html5"
+            />
+            <SkillIcon
+              icon={
+                <FaCss3 className="md:w-16 md:h-16 w-10 h-10 text-blue-500" />
+              }
+              text="Css3"
+            />
+            <SkillIcon
+              icon={
+                <FaJs className="md:w-16 md:h-16 w-10 h-10 text-yellow-400" />
+              }
+              text="Javascript"
+            />
+            <SkillIcon
+              icon={
+                <FaReact className="md:w-16 md:h-16 w-10 h-10 text-blue-400" />
+              }
+              text="ReactJs"
+            />
+            <SkillIcon
+              icon={
+                <FaNodeJs className="md:w-16 md:h-16 w-10 h-10 text-green-400" />
+              }
+              text="NodeJs"
+            />
+            <SkillIcon
+              icon={
+                <FaBootstrap className="md:w-16 md:h-16 w-10 h-10 text-purple-600" />
+              }
+              text="Bootstrap"
+            />
+            <SkillIcon
+              icon={
+                <FaFigma className="md:w-16 md:h-16 w-10 h-10 text-purple-600" />
+              }
+              text="Figma"
+            />
+            <SkillIcon
+              icon={
+                <SiNextdotjs className="md:w-16 md:h-16 w-10 h-10 text-gray-400" />
+              }
+              text="NextJs"
+            />
+            <SkillIcon
+              icon={
+                <SiMongodb className="md:w-16 md:h-16 w-10 h-10 text-gray-500" />
+              }
+              text="Mongoose"
+            />
+            <SkillIcon
+              icon={
+                <SiMongodb className="md:w-16 md:h-16 w-10 h-10 text-green-500" />
+              }
+              text="MongoDb"
+            />
+            <SkillIcon
+              icon={
+                <SiTailwindcss className="md:w-16 md:h-16 w-10 h-10 text-blue-400" />
+              }
+              text="Tailwind Css"
+            />
+            <SkillIcon
+              icon={
+                <SiExpress className="md:w-16 md:h-16 w-10 h-10 text-green-500" />
+              }
+              text="ExpressJs"
+            />
+            <SkillIcon
+              icon={
+                <SiDaisyui className="md:w-16 md:h-16 w-10 h-10 text-indigo-500" />
+              }
+              text="Daisy Ui"
+            />
+            <SkillIcon
+              icon={
+                <SiGit className="md:w-16 md:h-16 w-10 h-10 text-red-500" />
+              }
+              text="Git"
+            />
+            <SkillIcon
+              icon={
+                <SiFirebase className="md:w-16 md:h-16 w-10 h-10 text-yellow-400" />
+              }
+              text="Firebase"
+            />
+            <SkillIcon
+              icon={
+                <SiVercel className="md:w-16 md:h-16 w-10 h-10 text-blue-400" />
+              }
+              text="Vercel"
+            />
           </div>
         </div>
       </div>
     </Element>
   );
 };
+
+// SkillIcon component to render each skill icon with text
+const SkillIcon = ({ icon, text }) => (
+  <div>
+    {icon}
+    <p className="text-center">{text}</p>
+  </div>
+);
 
 export default Skills;
