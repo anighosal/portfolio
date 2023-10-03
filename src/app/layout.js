@@ -1,5 +1,3 @@
-"use client";
-
 import "./globals.css";
 
 import { useEffect } from "react"; // Import useEffect from React
