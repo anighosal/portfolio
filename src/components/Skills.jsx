@@ -42,7 +42,7 @@ const Skills = () => {
       >
         <div>
           <h2
-            className="font-bold text-center md:text-3xl text-lg text-white mb-20"
+            className="font-bold text-center md:text-4xl text-lg text-white mb-20"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
