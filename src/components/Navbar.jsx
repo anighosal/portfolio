@@ -37,29 +37,19 @@ const Navbar = () => {
 
   const handleScrollTo = (to) => {
     if (to === "contact") {
-      // Scroll to the "Contact" section
       scroller.scrollTo(to, {
         duration: 500,
         smooth: "easeInOutQuart",
-        offset: 0, // You can adjust the offset as needed
+        offset: 0,
       });
     } else {
-      // Scroll to other sections based on the provided 'to' value
       scroller.scrollTo(to, {
         duration: 500,
         smooth: "easeInOutQuart",
-        offset: -100, // Adjust the offset as needed
+        offset: -100,
       });
     }
   };
-
-  // const handleScrollTo = (to) => {
-  //   scroller.scrollTo(to, {
-  //     duration: 500,
-  //     smooth: "easeInOutQuart",
-  //     offset: -100, // Adjust the offset as needed
-  //   });
-  // };
 
   return (
     <nav

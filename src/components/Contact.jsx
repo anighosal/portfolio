@@ -3,8 +3,7 @@
 import React, { useEffect } from "react";
 import ContactForm from "./ContactForm";
 import { Element } from "react-scroll";
-import Image from "next/image";
-import img from "../../public/images.jpg";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
@@ -16,6 +15,7 @@ const Contact = () => {
       once: true, // Whether animations should only happen once while scrolling down
     });
   }, []);
+
   return (
     <Element name="contact">
       <div className="justify-center mt-20">
@@ -32,24 +32,40 @@ const Contact = () => {
               className="md:text-start text-center text-white md:text-xl text-lg font-bold mb-4"
               data-aos="fade-right"
             >
-              Let's Contact
+              Lets Contact
             </h3>
             <p className="text-white" data-aos="fade-right">
-              I am currently for new opportunities. my inbox is alwayas open.
+              I am currently for new opportunities. My inbox is always open.
               Whether you have a question or just want to say hi, I will try my
               best to get back to you!
             </p>
             <div className="flex gap-10 mt-4" data-aos="fade-right">
-              <a href="https://www.facebook.com/anighosal2019">
+              <a
+                href="https://www.facebook.com/anighosal2019"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaFacebook className="text-[#1877f2] bg-white rounded-full text-2xl"></FaFacebook>
               </a>
-              <a href="https://www.linkedin.com/in/ani-ghosal-4a083a220/">
+              <a
+                href="https://www.linkedin.com/in/ani-ghosal-4a083a220/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaLinkedin className="text-[#0a66c2] text-2xl"></FaLinkedin>
               </a>
-              <a href="https://github.com/anighosal">
+              <a
+                href="https://github.com/anighosal"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaGithub className="text-[#333] bg-white rounded-full text-2xl"></FaGithub>
               </a>
-              <a href="https://twitter.com/ani_ghosal">
+              <a
+                href="https://twitter.com/ani_ghosal"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaTwitter className="text-[#1da1f2] text-2xl"></FaTwitter>
               </a>
             </div>

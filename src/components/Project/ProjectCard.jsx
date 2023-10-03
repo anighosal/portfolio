@@ -1,29 +1,15 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import "./Project.css";
+import Image from "next/image";
 
 const ProjectCard = ({ project }) => {
-  const {
-    title,
-    description,
-    position,
-    image,
-    technology,
-    features,
-    liveSite,
-  } = project;
+  const { title, position, image, technology, features, liveSite } = project;
 
   return (
     <div className="card card-compact  w-full shadow-xl">
       <div className="card-image-wrapper" style={{ height: "100px" }}>
-        <img
-          src={image}
-          alt="image"
-          width={500}
-          height={500}
-          className="image-hover-effect"
-          style={{ objectFit: "cover", width: "100%", height: "100%" }}
-        />
+        <Image src={image} width={500} height={500} alt="imageName"></Image>
       </div>
       <div className="card-body bg-white">
         <h2 className="card-title text-base font-semibold">{title}</h2>

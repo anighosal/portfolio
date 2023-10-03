@@ -16,7 +16,6 @@ import Link from "next/link";
 
 const Hero = () => {
   const handleDownloadResume = () => {
-    // Replace 'YourResume.pdf' with the actual path to your PDF resume in the public directory
     const resumePath = "/myResume.pdf";
     const anchor = document.createElement("a");
     anchor.href = resumePath;
@@ -31,7 +30,7 @@ const Hero = () => {
           src={img}
           width={100}
           height={100}
-          alt="name"
+          alt="Image Alt Text"
         ></Image>
         <div className="sm:w-full">
           <h1 className="text-xl text-white mt-3 font-bold">
@@ -41,9 +40,8 @@ const Hero = () => {
             <TypeAnimation
               className="md:text-5xl"
               sequence={[
-                // Same substring at the start will only be typed out once, initially
                 "Web developer",
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                1000,
                 "Frontend developer",
                 1000,
                 "Mern stack developer",
@@ -78,19 +76,6 @@ const Hero = () => {
           </a>
         </div>
         <div>
-          {/* <a
-            data-aos="flip-right"
-            data-aos-duration="700"
-            href={MyResume}
-            download
-          >
-            <button className="mt-3 px-1 py-1 w-full sm:w-fit bg-gradient-to-br from-blue-500 via-purple-500 to bg-pink-500 rounded-full bg-transparent hover:bg-slate-800 text-white border border-white">
-              <span className="block rounded-full md:px-5 md:py-3 px-3 py-1 bg-[#121212] hover:bg-gradient-to-br from-blue-500 via-purple-500 to">
-                Download CV
-              </span>
-            </button>
-          </a> */}
-
           <button
             onClick={handleDownloadResume}
             className="mt-3 px-1 py-1 w-full sm:w-fit bg-gradient-to-br from-blue-500 via-purple-500 to bg-pink-500 rounded-full bg-transparent hover:bg-slate-800 text-white border border-white"
