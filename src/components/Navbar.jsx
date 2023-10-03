@@ -57,7 +57,7 @@ const Navbar = () => {
       data-aos="fade-down"
       data-aos-duration="800"
     >
-      <div className="flex flex-wrap items-center justify-between mx-auto px-0 md:py-4 md:px-4">
+      <div className="flex  items-center justify-between mx-auto px-2 md:py-4 md:px-4">
         <Link
           href={"/"}
           className="text-lg md:text-3xl text-white font-semibold"

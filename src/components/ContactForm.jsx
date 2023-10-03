@@ -43,7 +43,7 @@ const ContactForm = () => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="flex flex-col w-full lg:w-[500px] gap-[1.2rem] border p-4"
+        className="flex flex-col w-full lg:w-[500px] gap-[1.2rem] md:border border-0 md:p-4 p-0"
       >
         <input
           ref={name}
@@ -83,7 +83,7 @@ const ContactForm = () => {
         </button>
       </form>
       <ToastContainer
-        position="top-center"
+        position="bottom-center"
         autoClose={5000}
         hideProgressBar={false}
         newestOnTop={false}

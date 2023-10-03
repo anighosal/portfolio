@@ -63,23 +63,29 @@ const About = () => {
       {" "}
       {/* Add this Element wrapper */}
       <section className="text-white">
-        <div className="md:grid md:grid-cols-2  gap-8 justify-center items-center md:py-8 md:px-10 px-3 py-16">
+        <div className="md:grid md:grid-cols-2 gap-8 justify-center items-center md:py-8 md:px-10 px-3 py-16">
           <div
             className="md:ml-10 ml-0 w-full"
             data-aos="fade-right"
             data-aos-duration="800"
           >
-            <Image src={img} width={500} height={500} alt="about me" />
+            <Image
+              className="md:w-[400px] md:h-[400px] w-full h-full"
+              src={img}
+              width={400}
+              height={400}
+              alt="about me"
+            />
           </div>
           <div
-            className="mt-4 md:mt-0 text-left flex flex-col h-full"
+            className="mt-4 md:mt-0 text-left flex flex-col px-3 h-full"
             data-aos="fade-left"
             data-aos-duration="800"
           >
-            <h2 className="md:text-start text-center  md:text-2xl text-lg font-bold mb-4">
+            <h2 className="md:text-start text-center md:text-xl text-lg font-bold mb-4">
               About Me
             </h2>
-            <p className="text-base md:text-lg">
+            <p className="text-xs md:text-base">
               Welcome to my portfolio, a passionate and enthusiastic MERN
               (MongoDB, Express.js, React.js, Node.js) stack developer eager to
               kickstart my career in web development. As a recent graduate, I am
