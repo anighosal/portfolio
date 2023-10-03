@@ -1,7 +1,7 @@
+"use client";
+
 import "./globals.css";
 
-import { useEffect } from "react"; // Import useEffect from React
-import emailjs from "emailjs-com";
 import "typeface-inter";
 
 export const metadata = {
@@ -10,10 +10,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  useEffect(() => {
-    emailjs.init("YOUR_USER_ID_HERE"); // Replace with your actual email.js user ID
-  }, []);
-
   return (
     <html lang="en">
       <body>{children}</body>

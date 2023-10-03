@@ -4,7 +4,9 @@ import { FaRegPaperPlane } from "react-icons/fa";
 import { Element } from "react-scroll";
 import emailjs from "emailjs-com";
 import { useRef } from "react";
-import StartToastifyInstance from "toastify-js";
+import { ToastContainer, toast } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactForm = () => {
   const form = useRef();
@@ -23,23 +25,14 @@ const ContactForm = () => {
         "5m2Fua5uCPRNNSCs_"
       )
       .then(
-        (result) => {
-          console.log(result.text);
-          if (result.text) {
-            console.log("hello ");
-            StartToastifyInstance({
-              text: "Mail sent",
-              className: "info",
-              style: {
-                background: "linear-gradient(to right, #fe6601, #ff6605)",
-              },
-            }).showToast();
-          }
+        () => {
+          toast.success("message sent");
         },
-        (error) => {
-          console.log(error.text);
+        () => {
+          toast.error("something is wrong");
         }
       );
+    e.target.reset();
     name.current.value = "";
     email.current.value = "";
     message.current.value = "";
@@ -89,6 +82,18 @@ const ContactForm = () => {
           Submit <FaRegPaperPlane></FaRegPaperPlane>
         </button>
       </form>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </Element>
   );
 };
