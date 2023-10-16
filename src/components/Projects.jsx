@@ -29,7 +29,7 @@ const projectsData = [
     technology:
       "React.js, React-Router, Bootstrap, Font Awesome,Node.JS, Express.JS",
     position: "Frontend developer",
-    liveSite: "https://the-chef-recipe-e2cb1.web.app/",
+    liveSite: "https://chef-client-hcy4.vercel.app/",
   },
   {
     id: 3,
