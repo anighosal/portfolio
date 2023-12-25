@@ -34,7 +34,7 @@ const projectsData = [
   {
     id: 3,
     title: "Kids-Gallery",
-    image: "https://i.ibb.co/8dxTLWs/toy.jpg",
+    image: "https://i.ibb.co/CQfrwkk/Screenshot-5.png",
     description:
       "This is a mern based E-Commerce Website. Users can easily see all products.",
     features:
