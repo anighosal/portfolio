@@ -38,11 +38,11 @@ const projectsData = [
     description:
       "This is a mern based E-Commerce Website. Users can easily see all products.",
     features:
-      "This is an animaltoy maroon stock website, Users can add one or more, Users can delete added ages ifthey want.",
+      "This is an animal toy maroon stock website, Users can add one or more, Users can delete added ages ifthey want.",
     technology:
-      "React.js, React-Router, Tailwind CSS,Daisyui, Font Awesome,Node.JS, ExpressJS, MongoDB, JWT AOS, Lazy Loading.",
+      "React.js, React-Router, Tailwind CSS, DaisyUi, Font Awesome,Node.JS, ExpressJS, MongoDB, JWT AOS, Lazy Loading.",
     position: "Mern stack developer",
-    liveSite: "https://animal-toys-c416c.web.app/",
+    liveSite: "https://toys-client.vercel.app/",
   },
   {
     id: 4,
