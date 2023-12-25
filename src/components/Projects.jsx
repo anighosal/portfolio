@@ -22,7 +22,7 @@ const projectsData = [
   {
     id: 2,
     title: "Food-Zone",
-    image: "https://i.ibb.co/fMCtWHx/chef.jpg",
+    image: "https://i.ibb.co/m63CtT1/Screenshot-6.png",
     description: "Chef-Hunt is a Documentary website.",
     features:
       "This is a single page website.Here allthe chefs will describe their popular dishes. You can see the name of any chef, which country and how many dishes they have made.Users can rate the chef's cooking.",
