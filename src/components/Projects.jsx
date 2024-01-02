@@ -10,14 +10,14 @@ const projectsData = [
   {
     id: 1,
     title: "Music-King",
-    image: "https://i.ibb.co/mvg7nQB/music.jpg",
+    image: "https://i.ibb.co/y62bwqn/Screenshot-7.png",
     description: "A full-stack Website with some awesome features.",
     features:
       "Instructors can added classes, Students can enroll and pay for one class, Admin can make anyone an instructor,they can manage all users",
     technology:
       "React.js, React-Router, Tailwind CSS, Font Awesome,Node.JS, ExpressJS, MongoDB, Jwt and Stripe.js",
     position: "Full stack developer",
-    liveSite: "https://music-king-88980.web.app/",
+    liveSite: "https://music-king-two.vercel.app/",
   },
   {
     id: 2,
