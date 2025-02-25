@@ -1,22 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
 import img from "../../public/ani.jpg";
 
-import {
-  FaFacebook,
-  FaGithub,
-  FaLinkedin,
-  FaTwitter,
-  FaVoicemail,
-} from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
-import Link from "next/link";
 
 const Hero = () => {
   const handleDownloadResume = () => {
-    const resumePath = "/myResume.pdf";
+    const resumePath = "/public/myResume.pdf";
     const anchor = document.createElement("a");
     anchor.href = resumePath;
     anchor.download = "YourResume.pdf";

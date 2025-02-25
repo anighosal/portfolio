@@ -1,10 +1,10 @@
 "use client";
 
-import React, { useEffect } from "react";
-import ProjectCard from "./Project/ProjectCard";
-import { Element } from "react-scroll";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
+import { Element } from "react-scroll";
+import ProjectCard from "./Project/ProjectCard";
 
 const projectsData = [
   {
@@ -56,13 +56,25 @@ const projectsData = [
     position: "Frontend developer",
     liveSite: "https://hat-mart-client.vercel.app/",
   },
+  {
+    id: 5,
+    title: "Online Nursery Website",
+    image: "https://i.ibb.co/XkNVxHcY/Screenshot-3.png",
+    description: "This is totally Frontend based Project",
+    features:
+      "User can added a new product in cart with payment system, Users view & search all categories and products, User can delete and edit their product",
+    technology:
+      "React.js, Redux, Tailwind CSS, Font Awesome,Node.JS, ExpressJS, MongoDB, Jwt and Stripe.js",
+    position: "Frontend developer",
+    liveSite: "https://online-nursery-website-client-plum.vercel.app/",
+  },
 ];
 
 const Projects = () => {
   useEffect(() => {
     Aos.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: true, // Whether animations should only happen once while scrolling down
+      duration: 1000,
+      once: true,
     });
   }, []);
   return (

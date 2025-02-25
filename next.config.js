@@ -1,12 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-// next.config.js
-module.exports = {
+const nextConfig = {
   images: {
-    domains: ["i.ibb.co"],
+    domains: ["i.ibb.co"], // Ensure this is correct
   },
   experimental: {
     appDir: true,
   },
 };
+
+module.exports = nextConfig;

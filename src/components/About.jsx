@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
-import React, { useEffect, useState, useTransition } from "react";
-import img from "../../public/Developer.57c452315bafee7dd643.png";
-import TabButton from "./TabButton";
-import { Element } from "react-scroll"; // Import Element from react-scroll
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Image from "next/image";
+import { useEffect, useState, useTransition } from "react";
+import { Element } from "react-scroll";
+import img from "../../public/Developer.57c452315bafee7dd643.png";
+import TabButton from "./TabButton";
 
 const tabData = [
   {
@@ -14,7 +14,10 @@ const tabData = [
     id: "education",
     content: (
       <ul className="md:list-disc  pl-2">
-        <li>M.s.c(Chemistry)</li>
+        <li>
+          M.s.c(Chemistry) from Govt Tolaram College & University,
+          Session(2018-2019)
+        </li>
         <li>National University, Bangladesh</li>
       </ul>
     ),
@@ -24,18 +27,8 @@ const tabData = [
     id: "course",
     content: (
       <ul className="md:list-disc  pl-2">
-        <li>Complete Web development</li>
-        <li>Programming Hero, Online</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Experience",
-    id: "experience",
-    content: (
-      <ul className="md:list-disc  pl-2">
-        <li>Shadow Intern (Team Project)</li>
-        <li>Programming Hero, Online</li>
+        <li>Complete Web development(2023) From Programming Hero</li>
+        <li>Next Level Web development(2024) From Programming Hero</li>
       </ul>
     ),
   },
@@ -44,8 +37,8 @@ const tabData = [
 const About = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: true, // Whether animations should only happen once while scrolling down
+      duration: 1000,
+      once: true,
     });
   }, []);
 
@@ -61,7 +54,6 @@ const About = () => {
   return (
     <Element name="about">
       {" "}
-      {/* Add this Element wrapper */}
       <section className="text-white">
         <div className="md:grid md:grid-cols-2 gap-5 justify-center items-center md:py-8 md:px-2 px-3 py-16">
           <div
@@ -109,12 +101,6 @@ const About = () => {
                 active={tab === "course"}
               >
                 Course
-              </TabButton>
-              <TabButton
-                selectTab={() => handleTabChange("experience")}
-                active={tab === "experience"}
-              >
-                Experience
               </TabButton>
             </div>
             <div className="mt-8 md:text-start text-center">

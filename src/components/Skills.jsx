@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useEffect } from "react";
-import { Element } from "react-scroll";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import {
   FaBootstrap,
   FaCss3,
@@ -12,19 +13,18 @@ import {
   FaReact,
 } from "react-icons/fa";
 import {
-  SiNextDotJs,
-  SiExpress,
-  SiMongodb,
-  SiMongoose,
-  SiNextdotjs,
-  SiTailwindcss,
   SiDaisyui,
-  SiGit,
+  SiExpress,
   SiFirebase,
+  SiGit,
+  SiMongodb,
+  SiNextdotjs,
+  SiRedux,
+  SiTailwindcss,
+  SiTypescript,
   SiVercel,
 } from "react-icons/si";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { Element } from "react-scroll";
 
 const Skills = () => {
   useEffect(() => {
@@ -126,6 +126,18 @@ const Skills = () => {
                 <SiExpress className="md:w-16 md:h-16 w-10 h-10 text-green-500" />
               }
               text="ExpressJs"
+            />
+            <SkillIcon
+              icon={
+                <SiRedux className="md:w-16 md:h-16 w-10 h-10 text-green-500" />
+              }
+              text="Redux"
+            />
+            <SkillIcon
+              icon={
+                <SiTypescript className="md:w-16 md:h-16 w-10 h-10 text-green-500" />
+              }
+              text="Typescript"
             />
             <SkillIcon
               icon={
