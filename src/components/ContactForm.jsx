@@ -1,9 +1,6 @@
-import React, { useState } from "react";
-import { useForm, Controller } from "react-hook-form";
+import { useRef } from "react";
 import { FaRegPaperPlane } from "react-icons/fa";
 import { Element } from "react-scroll";
-import emailjs from "emailjs-com";
-import { useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
@@ -17,21 +14,8 @@ const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_tsme6vp",
-        "template_r0d1g64",
-        form.current,
-        "5m2Fua5uCPRNNSCs_"
-      )
-      .then(
-        () => {
-          toast.success("message sent");
-        },
-        () => {
-          toast.error("something is wrong");
-        }
-      );
+    toast.success("Message sent");
+
     e.target.reset();
     name.current.value = "";
     email.current.value = "";
@@ -69,6 +53,7 @@ const ContactForm = () => {
           ref={message}
           required
           placeholder="Write your message"
+          type="text"
           className="px-4 pt-4 w-full bg-white-700"
           name="message"
           id=""

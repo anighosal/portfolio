@@ -7,12 +7,11 @@ import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
-  const handleDownloadResume = () => {
-    const resumePath = "/public/myResume.pdf";
-    const anchor = document.createElement("a");
-    anchor.href = resumePath;
-    anchor.download = "YourResume.pdf";
-    anchor.click();
+  const resumeUrl =
+    "https://drive.google.com/file/d/1xHDbQC-Owzg4L77i4Uut4CiDIBbEhJyL/view?usp=sharing"; // Replace with your resume URL
+
+  const handleDownload = () => {
+    window.open(resumeUrl, "_blank");
   };
   return (
     <div className="text-center mb-10">
@@ -69,11 +68,11 @@ const Hero = () => {
         </div>
         <div>
           <button
-            onClick={handleDownloadResume}
+            onClick={handleDownload}
             className="mt-3 px-1 py-1 w-full sm:w-fit bg-gradient-to-br from-purple-400 to-pink-600 rounded-full bg-transparent hover:bg-slate-800 text-white border border-white"
           >
             <span className="block rounded-full md:px-5 md:py-3 px-3 py-1 bg-[#121212] hover:bg-gradient-to-r from-purple-400 to-pink-600">
-              Download CV
+              Download Resume
             </span>
           </button>
         </div>

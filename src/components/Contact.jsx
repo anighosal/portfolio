@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useEffect } from "react";
-import ContactForm from "./ContactForm";
+import { useEffect } from "react";
 import { Element } from "react-scroll";
+import ContactForm from "./ContactForm";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -11,8 +11,8 @@ import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 const Contact = () => {
   useEffect(() => {
     Aos.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: true, // Whether animations should only happen once while scrolling down
+      duration: 1000,
+      once: true,
     });
   }, []);
 
