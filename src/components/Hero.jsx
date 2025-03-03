@@ -31,11 +31,11 @@ const Hero = () => {
             <TypeAnimation
               className="md:text-5xl"
               sequence={[
-                "Web developer",
+                "Full Stack developer",
                 1000,
                 "Frontend developer",
                 1000,
-                "Mern stack developer",
+                "MERN stack developer",
                 1000,
               ]}
               wrapper="span"

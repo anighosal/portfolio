@@ -27,8 +27,14 @@ const tabData = [
     id: "course",
     content: (
       <ul className="md:list-disc  pl-2">
-        <li>Complete Web development(2023) From Programming Hero</li>
-        <li>Next Level Web development(2024) From Programming Hero</li>
+        <li>
+          Complete Web development, Duration: January-june(2023)
+          <p className="font-bold ">Programming Hero</p>
+        </li>
+        <li>
+          Apollo Next Level Web development, Duration: April-November(2024)
+          <p className="font-bold ">Programming Hero</p>
+        </li>
       </ul>
     ),
   },
