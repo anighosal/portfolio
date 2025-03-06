@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Understanding React Hooks",
+    "description": "Learn how React Hooks work and improve your functional components.",
+    "releaseDate": "March 10, 2024",
+    "image": "https://i.ibb.co/xt1Qxz40/OIP.jpg",
+    "author": {
+      "name": "John Doe",
+      "image": "https://i.ibb.co/CKBJWPy9/OIP-2.jpg"
+    },
+    "content": "Full blog content about React Hooks..."
+  },
+  {
+    "id": 2,
+    "title": "Mastering TypeScript",
+    "description": "Why TypeScript is the future of JavaScript development.",
+    "releaseDate": "April 15, 2024",
+    "image": "https://i.ibb.co/TDYgFQG3/SJ2022-Blog-Type-Script-Language.webp",
+    "author": {
+      "name": "Jane Smith",
+      "image": "https://i.ibb.co/CKBJWPy9/OIP-2.jpg"
+    },
+    "content": "Full blog content about TypeScript..."
+  },
+  {
+    "id": 3,
+    "title": "Next.js Performance Optimization",
+    "description": "Improve the speed and performance of your Next.js applications.",
+    "releaseDate": "May 5, 2024",
+    "image": "https://i.ibb.co/WvvNrC8D/OIP-1.jpg",
+    "author": {
+      "name": "Alex Johnson",
+      "image": "https://i.ibb.co/CKBJWPy9/OIP-2.jpg"
+    },
+    "content": "Full blog content about Next.js performance optimization..."
+  }
+]

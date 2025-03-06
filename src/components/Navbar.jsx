@@ -1,11 +1,11 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
-import { FaBars, FaMinus } from "react-icons/fa";
-import MenuOverlay from "./MenuOverlay";
-import { Link as ScrollLink, scroller } from "react-scroll";
 import Aos from "aos";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { FaBars, FaMinus } from "react-icons/fa";
+import { Link as ScrollLink, scroller } from "react-scroll";
+import MenuOverlay from "./MenuOverlay";
 
 const navLinks = [
   {
@@ -23,6 +23,10 @@ const navLinks = [
   {
     title: "Contact",
     path: "contact",
+  },
+  {
+    title: "Blog",
+    path: "blog",
   },
 ];
 
